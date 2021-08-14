@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Ashishnitp2k20
-- 👀 I’m interested in programming.
+- 👀 I’m in love with programming.
 - 🌱 I’m currently learning web devlopment.
 - 📫 How to reach me just search on instagram " @kr.ash.ish "
 
