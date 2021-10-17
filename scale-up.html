@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Zig-Zag motion</title>
+	<link rel="stylesheet" href="fontawesome/css-fa/all.min.css">
+	<style>
+
+	body{
+		background-color: lightskyblue;
+		margin: 0;
+	}
+	.container{
+		animation: bouncing 0.5s ease 0s infinite alternate both;
+		margin-top: 50px;
+		margin-left: 400px;
+		width: 500px;
+		height: 500px;
+		border: 5px dashed greenyellow;
+		border-radius: 50%;
+        background-color: red;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: 1.2s all;
+	}
+	@keyframes  bouncing {
+		0%{
+			bottom: 0;
+			transform: scale(0, 0);
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+		}
+		100%{
+			bottom: 100px;
+			transform: scale(1.2,1.2);
+			box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+		}
+		
+	}
+	#red{
+		width: 500px;
+		height: 500px;
+		border: 5px dashed greenyellow;
+		border-radius: 50%;
+        background-color: red;
+        display: flex;
+        animation: border 1s linear infinite;
+	}
+	 @keyframes border {
+		to{
+			transform: rotate(360deg);
+		}
+		
+	}
+
+	#orange{
+		width: 400px;
+		height: 400px;
+		border-radius: 50%;
+        background-color: orange;
+        margin: auto;
+        display: flex;
+	}
+	#yellow{
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		background-color: yellow;
+		margin:  auto;
+		display: flex;
+	}
+	#blue{
+	    width:200px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: blue;
+		margin:  auto;
+		display: flex;	
+	}
+	#indigo{
+		width: 100px;
+		height:100px;
+		border-radius: 50%;
+		background-color: orange;
+		margin:  auto;
+		display: flex;
+	}
+	#violet{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: violet;
+		margin:  auto;
+		display: flex;
+	}
+	#child{
+		font-size: 500px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+	a{
+		text-decoration: none;
+		background: linear-gradient(to right top,#d16ba5,#69bff8,#5ffbf1);
+		padding: 5px;
+		color: black;
+		margin-left: 50px;
+		border-radius: 10px;
+	}
+</style>
+
+</head>
+<body>
+
+       	<h1><a href="https://github.com/Ashishnitp2k20" target="_blank"><i class="fab fa-github-square"></i>Ashish Kumar</a></h1>
+       <div class="container">
+       	<div id="red">
+       		<div id="orange">
+       			<div id="yellow">
+       				<div id="blue">
+       					<div id="indigo">
+       						<div id="violet">
+       							
+       						</div>
+       					</div>
+       				</div>
+       			</div>
+       		</div>
+       	</div>
+       </div>
+      
+</body>
+</html>
