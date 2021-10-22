@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Animation</title>
+	
+	<style>
+	body{
+		box-sizing: border-box;
+		margin: 0;
+		background-color: teal;
+		display: flex;
+	}
+	div{
+		width: 300px;
+		height: 300px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		background-color: aquamarine;
+		animation: boom 5s ease-in-out infinite;
+	}
+	@keyframes boom {
+		0%{
+			border-radius: 0%;
+			background-color: violet;
+			transform: translateX( 120px);
+		}
+		10%{
+			border-radius: 10%;
+			background-color: indigo;
+			transform: translateY( 60px);
+		}
+		20%{
+			border-radius: 20%;
+			background-color: blue;
+			transform: translateZ( 30px);
+		}
+		30%{
+			border-radius: 30%;
+			background-color: green;
+			transform: translate(0);
+		}
+		40%{
+			border-radius: 40%;
+			background-color: yellow;
+			transform: translate(-120px);
+		}
+		50%{
+			border-radius: 50%;
+			background-color: red;
+			transform: translate(-60px);
+
+		}
+	}
+		
+	</style>
+	}
+	}
+</head>
+<body>
+	<div>
+		<h1>Ashish Kumar</h1>
+	</div>
+	
+</body>
+</html>

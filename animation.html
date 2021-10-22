@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Animation</title>
+	
+	<style>
+	body{
+		box-sizing: border-box;
+		margin: 0;
+		background-color: teal;
+		display: flex;
+	}
+	div{
+		width: 300px;
+		height: 300px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		background-color: aquamarine;
+		/*animation: rotation 5s ease-in-out infinite;*/
+		animation-name: rotation,rotate,reducedsize;
+		animation-duration: 2s,2s,2s ;
+		animation-iteration-count: infinite,infinite,infinite;
+		animation-direction: alternate,alternate,alternate ;
+	}
+	div h1{
+		font-size: 20px;
+		background: linear-gradient(to right top,#d16ba5,#69bff8,#5ffbf1);
+		margin: 15px;
+		padding: 3px;
+		border-radius: 10px;
+	}
+	@keyframes rotation {
+		0%{
+			border-radius: 0%;
+			background-color: violet;
+			
+		}
+	100%{
+			border-radius: 50%;
+			background-color: red;
+			
+
+		}
+	}
+	@keyframes  rotate {
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes reducedsize {
+		0%{
+			width: 300px;
+			height: 300px;
+		}
+		100%{
+			width: 100px;
+			height: 100px;
+		}
+	}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Ashish Kumar</h1>
+	</div>
+	
+</body>
+</html>
