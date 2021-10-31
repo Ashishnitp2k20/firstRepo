@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Airport Runway</title>
+	<link rel="stylesheet" href="">
+	<style >
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			height: 100vh;
+			width: 100%;
+			background-image: url('https://github.com/Ashishnitp2k20/Ashishnitp2k20/blob/main/background.jpg?raw=true');
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+		}
+		.centered {
+			font-size: 20px;
+			font-weight: bold;
+		    color: black;
+			font-family: cursive;
+			border-top: 5px solid #313131;
+			border-bottom: 5px solid #313131;
+			border-right: 5px solid cyan;
+			border-left: 5px solid cyan;
+			padding: 10px;
+			border-radius: 50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+		.runway{
+			height: 100px;
+			width: 100%;
+			background-image: url('https://github.com/Ashishnitp2k20/Ashishnitp2k20/blob/main/road.jpg?raw=true');
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			border-top: 5px dashed red;
+			animation: blinkingBackground 2s infinite ;
+		}
+		@keyframes blinkingBackground{
+		0%		{ border-color: #10c018;}
+		25%		{ border-color: #1056c0;}
+		50%		{ border-color: #ef0a1a;}
+		75%		{ border-color: #254878;}
+		100%    { border-color: #04a1d5;}
+	}
+
+		.airplane{
+			width: 500px;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			bottom: 10px;
+			right: -200px;
+            animation: plane 3s linear infinite;
+            transform-origin: 100% 50%;
+		}
+		@keyframes plane {
+			0%{
+				transform: translateX(0px) translateY(0px) rotate(0deg);
+			}
+			30%{
+				transform: translateX(-500px) translateY(0px) rotate(0deg);
+			}
+			100%{
+				transform: translateX(-1500px) translateY(-200px) rotate(20deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="centered">Ashish Airlines</div>
+		<div class="runway">
+		</div>
+		<img src="https://github.com/Ashishnitp2k20/Ashishnitp2k20/blob/main/airplane.png?raw=true" class="airplane">
+	</div>
+</body>
+</html>
