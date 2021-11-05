@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Transformation Property</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	body{
+		background: #07252d;
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+	}
+		.main{
+			border: 15px solid saddlebrown;
+			width: 500px;
+			height: 400px;
+			margin: 100px auto;
+			box-shadow: 0 0 10px black;
+			overflow: hidden;
+			position: relative;
+		}
+		.main img{
+			width: inherit;
+			height: inherit;
+			object-fit: contain;
+			transition: all 0.5s;
+		}
+		.main:hover img{
+         transform: scale(1.2,1.2);
+		}
+		.leftt{
+			background-image: url('img/ri.jpg');
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 100%;
+			transform: perspective(400px) rotateY(0deg);
+			transform-origin: left;
+			transition: all 0.8s;
+		}
+		.main:hover .leftt{
+			transform: perspective(400px) rotateY(90deg);
+		}
+		.rightt{
+			background-image: url('img/le.jpg');
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			transform: perspective(400px) rotateY(0deg);
+			transform-origin: right;
+			transition: all 0.8s;
+		}
+		.main:hover .rightt{
+			transform: perspective(400px) rotateY(-90deg);
+		}
+		h2{
+			position: relative;
+			font-size: 1em;
+			color: #0e3742;
+			text-transform: uppercase;
+			width: 25%;
+			text-align: center;
+			margin-left: 10px;
+			}
+		h2 span:nth-child(even){
+			animation-delay: 0.4s;
+		}
+		h2 span{
+			animation: animate 5s linear infinite;
+		}
+		@keyframes animate {
+			0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+				color: #0e3742;
+				text-shadow: none;
+			}
+
+			18.1%,20.1%,30%,50%,60.1%,80.1%,90%,100%{
+				color: #fff;
+				text-shadow: 0 0 10px #03bcf4,0 0 20px #03bcf4,0 0 40px #03bcf4,0 0 80px #03bcf4,0 0 160px #03bcf4,0 0 400px #03bcf4;
+			}
+		}
+
+    </style>
+</head>
+<body>
+
+		<h2>
+			<span>Happy</span>
+			<span>Bhai-Dooj ✨✨</span>
+			<br><span lang="hi">और गोवर्धन पूजा की हार्दिक शुभकामनाएं</span>
+		</h2>
+	
+
+	<div class="main">
+	<!--	<img src="img/maa.jpg" alt="shiv"> -->
+	<img class="maa" src="img/krishna.jpg">
+		<div class="leftt"></div>
+		<div class="rightt"></div>
+
+</body>
+</html>
