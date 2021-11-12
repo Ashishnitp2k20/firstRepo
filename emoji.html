@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Emoji - Smiling Face</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+     <style type="text/css">
+     	*{
+     		margin: 0;
+     		padding: 0;
+     		box-sizing: border-box;
+     	}
+        body{
+        	background: #242424;
+        }
+        .emoji{
+        	width: 200px;
+        	height: 200px;
+        	background: radial-gradient(circle,#fdda36,#fdda36,#f4ad16);
+        	border-radius: 50%;
+        	position: relative;
+        	margin: 200px auto;
+        }
+        .eye-1 , .eye-2{
+        	position: absolute;
+        	width: 38px;
+        	height: 40px;
+        	background: #fdfdfd;
+        	border: 1px solid #cecece;
+        	border-radius: 50%;
+
+        }
+        .eye-1{
+        	top: 45px;
+        	left: 40px;
+        }
+        .eye-2{
+        	top: 45px;
+        	right: 40px;      
+        	 }
+
+        .m{
+        	width: 20px;
+        	height: 20px;
+        	background: #000000;
+        	border-radius: 50%;
+        	margin: auto;
+        	animation: animation 3s infinite;
+        }
+        .mouth{
+        	position: absolute;
+        	bottom: 45px;
+        	left: 70px;
+        	width: 60px;
+        	height: 8px;
+        	border-radius: 50%;
+        	background: #a5680b;
+        	animation: animation-2 3s infinite;
+        }
+        @keyframes animation {
+             	to{
+             		transform: translateY(9px);
+             	}
+             }     
+             @keyframes animation-2 {
+             	to{
+             		bottom: 30px;
+             		height: 32px;
+             		border-radius: 0 0 50px 50px;
+             	}
+             }
+           /*  h2{
+             	position: absolute;
+                top: -200px;
+             	font-family: poppins,sans-serif;
+             	text-align: center;
+             	margin-top: 450px;
+             	background: #03bcf4;
+             	border-radius: 50px;
+             	padding: 20px;
+             }
+             */
+              span{
+             	background: linear-gradient(55deg,darkcyan,deeppink,violet);
+             	border-radius: 50px;
+             	padding: 10px;
+             	font-size: 10px;
+             	position: absolute;
+             	left: 50px;
+             	top: 250px;
+             	margin-top: 10px;
+             }
+
+    </style>
+</head>
+<body>
+	<div class="container">
+	<div class="emoji">
+		<div class="eye-1">
+			<div class="m"></div>
+		</div>
+		<div class="eye-2">
+			<div class="m"></div>
+		</div>
+		<div class="mouth"></div>
+        <span>Created by Ashish</span>
+	</div>
+</body>
+</html>
