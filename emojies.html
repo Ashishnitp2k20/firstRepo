@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Emojies Face</title>
+	<style>
+		body {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,#3f51b5,#00bcd4,#27dcd9);
+}
+		#emoji{
+			display: flex;
+            align-items: center;
+            justify-content: center;
+			text-align: center;
+			font-size: 10rem;
+			border: 5px solid rgb(#cae3ff);
+			filter: grayscale(1.5);
+            cursor: pointer;
+            transition-property: transform, filter;
+            transition-duration: 200ms;
+        }
+        #emoji:hover{
+        	transform: scale(2);
+        	filter: grayscale(0);
+        }
+        h1{
+        	position: absolute;
+        	bottom: 0;
+        	right: 0;
+        	background: linear-gradient(45deg,coral,deeppink);
+        	padding: 10px;
+        	border-radius: 50px;
+        	box-shadow: 0 10px 10px red;
+        	color: #20ffd2;
+        	margin-right: 10px;
+        }
+        
+	</style>
+</head>
+<body>
+	<div id="emoji">😂</div>
+    <h1>Ashish Kumar</h1>
+	<script>
+		const btn = document.querySelector("#emoji")
+
+const emojis = [
+  "😆", "😅", "🤣", "😂",
+  "😀", "🤑","😎", "🤨", "🙂",
+  "😊", "😗", "😛", "😏","😘",
+  "🤥", "😴", "🥺", "😧","🤩"
+]
+
+btn.addEventListener("mouseover", () => {
+  btn.innerText = emojis[Math.floor(Math.random() * emojis.length)]
+})
+	</script>
+</body>
+</html>
